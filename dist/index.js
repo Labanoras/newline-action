@@ -1,4 +1,4 @@
-require('./sourcemap-register.js');/******/ (() => { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ 68:
@@ -20444,7 +20444,7 @@ const REPO_DIRECTORY = process.env["GITHUB_WORKSPACE"],
     context = github.context,
     owner = context.repo.owner,
     repo = context.repo.repo,
-    client = new github.GitHub(token),
+    client = new github.Github(token),
     committer = {
         name: 'GitHub Actions Bot',
         email: '41898282+github-actions[bot]@users.noreply.github.com',
@@ -20671,4 +20671,3 @@ run();
 module.exports = __webpack_exports__;
 /******/ })()
 ;
-//# sourceMappingURL=index.js.map
