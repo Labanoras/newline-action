@@ -20658,6 +20658,7 @@ async function push() {
     }
     else {
         core.info("Auto commit is disabled. Skipping...");
+        core.setFailed("Fix final new lines...");
     }
 
     core.info("Leaving comment on PR...");
