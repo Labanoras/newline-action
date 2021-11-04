@@ -13,7 +13,7 @@ const REPO_DIRECTORY = process.env["GITHUB_WORKSPACE"],
     context = github.context,
     owner = context.repo.owner,
     repo = context.repo.repo,
-    client = new github.Github(token),
+    client = new github.getOctokit(token),
     committer = {
         name: 'GitHub Actions Bot',
         email: '41898282+github-actions[bot]@users.noreply.github.com',
