@@ -20546,10 +20546,10 @@ async function processFiles(config) {
                 core.info(`${element.filename} is ignored. Skipping...`);
                 continue;
             }
-            if (!isText(element.filename)) {
-                core.info(`${element.filename} is not a text file. Skipping...`);
-                continue;
-            }
+            // if (!isText(element.filename)) {
+            //     core.info(`${element.filename} is not a text file. Skipping...`);
+            //     continue;
+            // }
             const file = await fs.readFile(element.filename, { encoding: "utf8" });
             if (file.endsWith("\n") || file.endsWith("\r")) {
                 core.info(`${element.filename} is not compromised. Skipping...`);
